@@ -1,0 +1,104 @@
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaxy Tetris</title>
+   
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Press Start 2P', cursive;
+             background: #000 url("https://imgs.search.brave.com/Njhe8vAFg_Xo1rRyTREwQqqdWPgJQZHPKn4gk19EieY/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9oZWxp/b3MtaS5tYXNoYWJs/ZS5jb20vaW1hZ2Vy/eS9hcnRpY2xlcy8w/MWcwWEN3YzVCdHBI/elMwSnQ5M2F4TS9p/bWFnZXMtMS5maWxs/LnNpemVfMjAwMHgx/MjUwLnYxNjg3NTMz/MjE3LmpwZw");
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            flex-direction: column;
+        }
+
+        #content-container {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            max-width: 800px;
+            width: 90%;
+            margin: auto;
+        }
+
+        h1 {
+            margin-top: 0;
+            font-size: 2.5em;
+        }
+
+        p, ul, li {
+            font-size: 1em;
+            text-align: left;
+            margin: 0.5em 0;
+        }
+
+        #game-container {
+            margin: 30px auto;
+            padding: 10px;
+            width: 100%;
+            max-width: 600px;
+            background: #333;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        #start-button {
+            margin: 30px auto;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        #start-button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        #instructions {
+            margin-top: 30px;
+            text-align: left;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="content-container">
+        <h1>Welcome to Galaxy Tetris!</h1>
+        <div id="instructions">
+            <h2>How to Play:</h2>
+            <p>Tetris is a classic puzzle game where the goal is to stack falling blocks (tetrominoes) to create complete rows without any gaps. When a row is completed, it disappears, and the player earns points. The game ends when the stack of blocks reaches the top of the playing field.</p>
+            <p>Controls:</p>
+            <ul>
+                <li><strong>Left Arrow:</strong> Move the falling block left</li>
+                <li><strong>Right Arrow:</strong> Move the falling block right</li>
+                <li><strong>Down Arrow:</strong> Accelerate the falling block's descent</li>
+                <li><strong>Up Arrow:</strong> Rotate the falling block</li>
+            </ul>
+            <p>Click the "Start Game" button below to begin playing!</p>
+        </div>
+        <div id="game-container">
+            <!-- Game canvas would go here -->
+        </div>
+        <a href='ivan.html'>
+            <button id="start-button">Start Game</button>
+        </a>
+    </div>
+</body>
+</html>
